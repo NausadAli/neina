@@ -22,6 +22,9 @@ app.use(express.json());
    }
  })();
 
+
+app.get('/', (req, res) => res.send('Hello from Vercel!'));
+
  // Routes
 app.use('/api/bookings', bookingRoutes);
 app.use('/api/health', healthCheck);
